@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+</head>
+<body>
+    <header>
+        <h1>Booking Form</h1>
+        <p>Enter your details on the form below and secure your slot.</p>
+    </header>    
+    <main>
+        <form action="/submit">
+            <label for="option" class="option">
+                <input type="radio" required value="classic-cut" name="service" >
+                <span>Classic Cut <small>45 mins &middot; KES 400 </small>  </span>
+            </label>
+            <label for="option" class="option">
+                <input type="radio" required value="skin-fade" name="service" >
+                <span>Skin Fade <small>50 mins &middot; KES 650 </small> </span>
+            </label> <br>
+            <label for="phone">Phone (Mpesa)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Please enter your number..." >
+            <br>
+           <label class="slot">
+                <input type="radio" name="time" value="09:30"><span>9:30</span>
+            </label>
+            <label class="slot">
+                <input type="radio" name="time" value="10:00" disabled><span>10:00</span>
+            </label>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name." required> <br>
+            <label for="message">Message</label>
+            <textarea name="message" id="name">
+                Enter your message
+            </textarea> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" > <br> <br>
+            <label for="password">Password:</label>
+            <input type="password"> <br>
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="">-- Select an option --</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select> <br>
+            <label for="preferences">Preferences</label>
+            <label for="notification">
+            <input type="checkbox" name="preferences" value="notifications">
+            Notifications</label>
+            <label for="newsletter">
+            <input type="checkbox" name="preferences" value="newsletterr">
+            Newsletter</label>
+            <label for="updates">
+            <input type="checkbox" name="preferences" value="updates">
+            Updates</label>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date"> <br>
+            <label for="color">Theme color</label>
+            <input type="color" id="color" name="color" value="blue"> <br>
+            <br>
+            <label for="submit">Submit
+                <input type="submit" id="submit" name="submit">
+            </label>
+        </form>
+    </main>
+</body>
+</html>
