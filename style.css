@@ -1,0 +1,43 @@
+      /*Universal selector*/
+      *{
+        padding: 2px;
+        margin: 5px;
+        font-family: 'Times New Roman', Times, serifs;
+        color: aqua;
+      }
+      /*Element Selector*/
+      body{
+        background-color: black;
+        color: white;
+      }
+      header{
+        background-color: gray;
+      }
+      h1{
+        color: blue;
+        font-size: 26px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      p{
+        color: greenyellow;
+      }
+      /*Class Selector*/
+
+      .btn{
+        color: antiquewhite;
+        background-color: blue;
+        padding: 8px;
+      }
+      /*id selector*/
+      #hero-title {
+        color: red;
+        font-size: 50px;
+      }
+      .hero {
+        background: none;
+      }
+      /*attribute selector*/
+      a[href]{
+        font-size: 25px;
+        text-decoration: none;
+      }

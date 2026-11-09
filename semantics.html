@@ -8,6 +8,13 @@
       content="Browse barbers and services , pick an open time slot and book your haircut at Great Cut in seconds."
     />
     <title>Great Cut Babershop!</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Internal styling css-->
+    <!-- <style>
+      body{
+        background-color: white;
+      }
+    </style> -->
   </head>
   <body>
     <!--This is a header section-->
@@ -29,15 +36,16 @@
     <main id="main">
       <!-- Hero section -->
       <section aria-labelledby="hero-title">
+        <!--Inline css-->
         <p>Kilimani &middot; Nairobi</p>
-        <h1 id="hero-title">Fresh Cuts, booked in <mark>seconds</mark></h1>
-        <p>
+        <h1 id="hero-title">Fresh Cuts, booked in <mark class="hero">seconds</mark></h1>
+        <p style="color: yellowgreen; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
           Browse our services, pick an open time slot and lock in your
           appointment. No calls , no queueing save the hassle.
         </p>
         <p>
-          <button><a href="book.html">Book Appointment</a></button>
-          <button><a href="services.html">See Pricing</a></button>
+          <button class="btn"><a href="book.html">Book Appointment</a></button>
+          <button class="btn"><a href="services.html">See Pricing</a></button>
         </p>
       </section>
       <!-- How section work -->
@@ -66,7 +74,7 @@
       </section>
       <!-- Article section -->
       <section aria-labelledby="popular-title">
-        <h2 id="popular-title">Popular Services.</h2>
+        <h2 id="popular-title" style="font-size: 26px; color: green;">Popular Services.</h2>
         <article>
           <h3>Skin Fade</h3>
           <p>
@@ -85,7 +93,7 @@
           <p><strong>ksh 500</strong>&middot; 60 mins</p>
         </article>
         <p>
-          <button>
+          <button style="background-color: red;">
             <a href="services.html">View all services.</a>
           </button>
         </p>
@@ -113,7 +121,7 @@
       </section>
       <section aria-labelledby="hours-title">
         <h2 id="hours-title">Open Hours</h2>
-        <table>
+        <table style="background-color: gray;">
             <caption>Great Cut Opening Hours</caption>
             <tbody>
                 <tr>
@@ -165,8 +173,8 @@
     </main>
     <footer>
         <section aria-labelledby="visit-title">
-            <h2 id="visit-title">Visit Us</h2>
-            <address>
+            <h2 id="visit-title" style="color: brown;">Visit Us</h2>
+            <address style="border:  1px solid #000;;">
                 Great Cut Barbershop <br>
                 Argwings Kodhek Rd, Kilimani <br>
                 Nairobi, Kenya <br>
