@@ -16,13 +16,16 @@
       h1{
         color: blue;
         font-size: 26px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 2px black;
       }
       p{
         color: greenyellow;
       }
       /*Class Selector*/
-
+      .hero {
+        background: none;
+      }
       .btn{
         color: antiquewhite;
         background-color: blue;
@@ -33,11 +36,104 @@
         color: red;
         font-size: 50px;
       }
-      .hero {
-        background: none;
-      }
+     
       /*attribute selector*/
       a[href]{
         font-size: 25px;
         text-decoration: none;
+      }
+
+      section p {
+          margin: 8px;
+          color: brown;
+          border: 1px solid green;
+
+      }
+      /*child selector*/
+      section > p {
+        text-transform: uppercase;
+        color: yellow;
+      }
+      /*adjacent sibling selector*/
+      h3 + p {
+        color: whitesmoke;
+        font-style: italic;
+      }
+      /*general sibling selector*/
+      h1 ~ p {
+        color: magenta;
+      }
+      /*Group se;ector*/
+      h1, h2 {
+          text-decoration: underline;
+          text-align: center;
+      }
+      /*pseudo selectors*/
+      button:hover{
+        background-color: red;
+        cursor: pointer;
+      }
+      /*pseudo element selector*/
+      .para::before{
+        content: "Note:";
+      }
+      .zindua::after{
+        content: "Learn with us";
+        color: rgb(150, 150, 10);
+      }
+      .search::before{
+        content: "Google:";
+        color: blueviolet;
+      }
+
+      .unit-mm{
+        font-size: 5mm;
+      }
+      .unit-cm{
+        font-size: 5cm;
+      }
+      .unit-inch{
+        font-size: 5in;
+      }
+      .unit-quarter{
+        font-size: 5Q;  
+      }
+      .unit-pixel{
+        font-size: 5px;
+      }
+      .unit-em{
+        font-size: 5em;
+      }
+      .unit-rem{
+        font-size: 5rem;
+      }
+      .unit-vw{
+        font-size: 5vw;
+      }
+      .unit-vh{
+        font-size: 5vh;  
+      }
+      .unit-percent{
+        font-size: 5%;
+      }
+      ul li a{
+        text-transform:uppercase;
+        text-shadow: 2px 2px  1px hsl(120, 48%, 49%);
+      }
+      .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #c12121;
+        border-radius: 6px;
+        background-color: #fff;
+        animation: changeColor 3s infinite;
+
+      }
+      @keyframes changeColor {
+          from{
+            background-color: rgb(180, 109, 109);
+          }        
+          to{
+            background-color: #55965f;
+          }
       }
